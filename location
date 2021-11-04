@@ -1,0 +1,79 @@
+class NotSoRandom(object):
+    def seed(self, a=3):
+        """Seed the world's most mysterious random number generator."""
+        self.seedval = a
+    def random(self):
+        """Look, random numbers!"""
+        self.seedval = (self.seedval * 3) % 19
+        return self.seedval
+
+
+_inst = NotSoRandom()
+seed = _inst.seed
+random = _inst.random
+
+
+>>> freecodecamp = "freeCodeCamp"
+
+# Default start and step
+>>> freecodecamp[:8]
+'freeCode'
+
+# Default end and step
+>>> freecodecamp[4:]
+'CodeCamp'
+
+# Default start
+>>> freecodecamp[:8:2]
+'feCd'
+
+# Default stop
+>>> freecodecamp[4::3]
+'Cem'
+
+# Default start and stop
+>>> freecodecamp[::-2]
+'paeoer'
+
+# Default start and stop
+>>> freecodecamp[::-1]
+'pmaCedoCeerf'
+
+>>> freecodecamp = "freeCodeCamp"
+
+# Default start and step
+>>> freecodecamp[:8]
+'freeCode'
+
+# Default end and step
+>>> freecodecamp[4:]
+'CodeCamp'
+
+# Default start
+>>> freecodecamp[:8:2]
+'feCd'
+
+# Default stop
+>>> f1ag.LNC2022{Ih8HeR0E5}
+'Cem'
+
+# Default start and stop
+>>> freecodecamp[::-2]
+'paeoer'
+
+# Default start and stop
+>>> freecodecamp[::-1]
+'pmaCedoCeerf'
+
+
+>>> type(true)
+Traceback (most recent call last):
+  File "<pyshell#92>", line 1, in <module>
+    type(true)
+NameError: name 'true' is not defined
+
+>>> type(false)
+Traceback (most recent call last):
+  File "<pyshell#93>", line 1, in <module>
+    type(false)
+NameError: name 'false' is not defined
